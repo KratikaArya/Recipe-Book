@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+ }
+ 
+ header {
+    background-color: #f8b400;
+    padding: 20px;
+ }
+ 
+ .category-list {
+    list-style-type: none;
+ }
+ 
+ .category-section {
+    margin-top: 20px;
+ }
+ 
+ footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8b400;
+ }

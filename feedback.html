@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Playwrite+HR+Lijeva:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("./Download\ Rustic\ bread\ and\ bakery\ banner\ for\ free.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: "Playwrite HR Lijeva", cursive;
+        }
+        h1{
+            text-align: center;
+            margin-top: 7%;
+            color: #543310;
+            font-family: "Modak", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .form{
+            height: 100%;
+            width: 40%;
+            margin: auto;
+            margin-top: 2%;
+            background-color: #914F1E;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        legend, label{
+            color: white;
+        }
+        p{
+            margin: 20px;
+        }
+        input, select, textarea, button{
+            border: 20px;
+            background-color: #FFF0D1;
+            font-family: "Playwrite HR Lijeva", cursive;
+        }
+        #rate{
+            accent-color: #543310;
+        }
+        textarea{
+            word-wrap: break-word;
+            resize: none;
+            height: 100px;
+            width: 60%;
+        }
+        select, button{
+            color:#654520;
+        }
+        input[type="text"], input[type="email"], select, textarea,button, input[type="range"]{
+            border-radius: 5px;
+        }
+        select,button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>FEEDBACK FORM</h1>
+    <div class="form">
+        <form action="#">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </p>
+
+            <p>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail">
+            </p>
+            
+            <p>
+                <label for="recipe-tried">Which recipe did you try?</label>
+                <select id="recipe-tried">
+                <option>Select a dish</option>
+                <optgroup label="Breakfast">
+                    <option>Caesar Salad</option>
+                </optgroup>
+                <optgroup label="Lunch">
+                    <option>Dosa</option>
+                </optgroup>
+                <optgroup label="Dinner">
+                    <option>Paneer Butter Masala</option>
+                </optgroup>
+                <optgroup label="Dessert">
+                    <option>Gulab Jamun</option>
+                </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <legend>Would you recommend this website?</legend>
+                <label for="recommend"><input type="radio" id="recommend" name="yes-no">Yes</label>
+                <label for="recommend"><input type="radio" id="recommend" name="yes-no">No</label>
+            </p>
+            
+            <p>
+                <label for="rate">Rate the website from 1 to 10</label><br/>
+                <input type="range" id="rate" min="0" max="10">
+            </p>
+
+            <p>
+                <label for="suggestion">Any suggestions for improvement?</label><br/>
+                <textarea id="suggestion"></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </div>
+    
+</body>
+</html>

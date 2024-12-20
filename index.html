@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Playwrite+HR+Lijeva:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Recipe Book</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ABOUTUS.HTML">About Us</a></li>
+                <li><a href="FEEDBACK.HTML">Feedback Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <video autoplay muted loop class="background-video">
+                <source src="cooking.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="overlay">
+                <h2>Welcome to Our Recipe Book!</h2>
+                <p class="cta">To navigate, go to Recipe Categories.</p>
+            </div>
+        </section>
+
+        <section class="recipe-navigation">
+            <h2>Explore Our Recipes</h2>
+            <div class="category-card">
+                <a href="breakfast.html"><img src="breakfast.jpeg" alt="Breakfast Recipe"></a>
+                <div class="category-text">Breakfast</div>
+            </div>
+            <div class="category-card">
+                <a href="lunch.html"><img src="lunch.jpeg" alt="Lunch Recipe"></a>
+                <div class="category-text">Lunch</div>
+            </div>
+            <div class="category-card">
+                <a href="dinner.html"><img src="dinner.jpeg" alt="Dinner Recipe"></a>
+                <div class="category-text">Dinner</div>
+            </div>
+            <div class="category-card">
+                <a href="desserts.html"><img src="dessert.jpeg" alt="Desserts Recipe"></a>
+                <div class="category-text">Desserts</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Book. All rights reserved.</p>
+    </footer>
+
+    <script src="homepage.js"></script>
+</body>
+</html>

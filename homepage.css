@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFEEAD;
+}
+
+header {
+    background-color: #543310; /* Header color */
+    color: #F4F1E1;
+    padding: 20px;
+}
+
+.navbar {
+    text-align: center; /* Center the navbar */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar a {
+    color: #F4F1E1;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #654520; /* Button color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #FFEEAD; /* Darker shade on hover */
+    color: #654520;
+}
+
+.hero-section {
+    position: relative;
+}
+
+.background-video {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #F4F1E1;
+}
+
+.overlay h2 {
+    font-size: 48px;
+}
+
+.cta {
+    font-size: 20px;
+}
+
+.featured-recipes {
+    padding: 20px;
+}
+
+.recipe-categories {
+   display: flex; /* Use flexbox for layout */
+   justify-content: space-around; /* Space out categories */
+   flex-wrap: wrap; /* Wrap if necessary */
+}
+
+.category-card {
+   position: relative; /* Position for overlay text */
+   margin: 10px;
+   width: calc(25% - 20px); /* Four cards in a row with spacing */
+   overflow: hidden; /* Prevent overflow of image */
+   border-radius: 8px; /* Rounded corners */
+}
+
+.category-card img {
+   width: 100%;
+   transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.category-card:hover img {
+   transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.category-text {
+   position: absolute; /* Position overlay text */
+   bottom: 10px; 
+   left: 10px; 
+   color: #F4F1E1; 
+   background-color: rgba(101, 69, 32, 0.7); /* Semi-transparent background */
+   padding: 5px; 
+   border-radius: 5px; 
+}
+
+footer {
+   text-align: center;
+   padding: 10px;
+   background-color: #543310; /* Footer color matches header */
+   color: #F4F1E1;
+}
+h1, h2{
+    font-family: "Modak", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.recipe-navigation > h2{
+    color: #654520;
+    margin-left: 10px;
+}
+p, .category-text, li{
+    font-family: "Playwrite HR Lijeva", cursive;
+}
